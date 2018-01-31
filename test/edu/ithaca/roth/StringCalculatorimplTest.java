@@ -23,4 +23,12 @@ class StringCalculatorimplTest {
        */
         //int total = myFunctions.Add(numbers);
     }
+
+    @Test
+    void addEmptyTest() {
+        StringCalculator calc = new StringCalculatorimpl();
+
+        int sum = calc.Add("");
+        assertEquals(0, sum, "Expected: 0 Actual: " + sum);
+    }
 }
