@@ -47,4 +47,18 @@ class StringCalculatorimplTest {
         sum = calc.Add("-3,7");
         assertEquals(4, sum, "Items not equal!");
     }
+    @Test
+    void addAnyNumbersTest(){
+        StringCalculator calc = new StringCalculatorimpl();
+        int sum = calc.Add("1");
+        assertEquals(1, sum, "Items not equal!");
+        sum = calc.Add("1,3");
+        assertEquals(4, sum, "Items not equal!");
+        sum = calc.Add("1,4,9,8,5");
+        assertEquals(27, sum, "Items not equal!");
+        sum = calc.Add("10,1");
+        assertEquals(11, sum, "Items not equal!");
+        sum = calc.Add("10,11,12,14");
+        assertEquals(sum, 47, "Items not equal!");
+    }
 }
