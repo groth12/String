@@ -31,4 +31,10 @@ class StringCalculatorimplTest {
         int sum = calc.Add("");
         assertEquals(0, sum, "Expected: 0 Actual: " + sum);
     }
+    @Test
+    void addOneNumberTest(){
+        StringCalculator calc = new StringCalculatorimpl();
+        int sum = calc.Add("1");
+        assertEquals(1, sum, "Items not equal!");
+    }
 }
