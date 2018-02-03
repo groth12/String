@@ -43,7 +43,7 @@ class StringCalculatorimplTest {
         int sum = calc.Add("1,2");
         assertEquals(3, sum, "Items not equal!");
         sum = calc.Add("10,2");
-        assertEquals(12, sum, "Items not equal!s");
+        assertEquals(12, sum, "Items not equal!");
         sum = calc.Add("-3,7");
         assertEquals(4, sum, "Items not equal!");
     }
